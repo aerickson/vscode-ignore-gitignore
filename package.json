@@ -1,6 +1,6 @@
 {
-    "name": "ignore-gitignore",
-    "displayName": "ignore-gitignore",
+    "name": "ignore-hgignore",
+    "displayName": "ignore-hgignore",
     "description": "Use .hgignore to ignore files in the browser and search",
     "version": "1.0.1",
     "publisher": "stubailo",

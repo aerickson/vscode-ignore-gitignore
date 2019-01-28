@@ -1,4 +1,4 @@
-# ignore-gitignore
+# ignore-hgignore
 
 A Visual Studio Code extension to use your `.hgignore` file to set ignored files in your editor.
 
