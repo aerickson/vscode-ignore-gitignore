@@ -1,7 +1,7 @@
 {
     "name": "ignore-gitignore",
     "displayName": "ignore-gitignore",
-    "description": "Use .gitignore to ignore files in the browser and search",
+    "description": "Use .hgignore to ignore files in the browser and search",
     "version": "1.0.1",
     "publisher": "stubailo",
     "engines": {
@@ -22,7 +22,7 @@
         "commands": [
             {
                 "command": "extension.ignoreGitignore",
-                "title": "Copy .gitignore to VS Code file exclude configuration"
+                "title": "Copy .hgignore to VS Code file exclude configuration"
             }
         ]
     },

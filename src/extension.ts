@@ -14,11 +14,11 @@ export function activate(context: ExtensionContext) {
     // The code you place here will be executed every time your command is executed
 
     // Just use the root one for now
-    const gitignores = await workspace.findFiles('**/.gitignore')
+    const gitignores = await workspace.findFiles('**/.hgignore')
 
     let path;
     if (!gitignores.length) {
-      window.showInformationMessage('No .gitignore files found in current workspace.');
+      window.showInformationMessage('No .hgignore files found in current workspace.');
       return;
     }
 
@@ -54,7 +54,7 @@ export function activate(context: ExtensionContext) {
 
     window.showInformationMessage(
       `Successfully overwrote search.exclude and files.exclude from \
-${gitignoreDocuments.length} .gitignore files.`);
+${gitignoreDocuments.length} .hgignore files.`);
   });
 
   context.subscriptions.push(disposable);
