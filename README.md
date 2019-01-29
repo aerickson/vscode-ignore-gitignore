@@ -15,3 +15,13 @@ Note that `.hgignore` files in nested directories are used too, and all of those
 ### Docs
 
 The command added by this package lives under `extension.ignoreGitignore`, in case you want to use it in a script or hotkey.
+
+### Development and Building
+
+```
+// clone repo
+// cd repo
+npm install
+vsce package
+code --install-extension *.vsix
+```
