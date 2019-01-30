@@ -49,7 +49,10 @@ export function activate(context: ExtensionContext) {
     })
 
     const config = await workspace.getConfiguration();
-    config.update('search.exclude', excludeObj, false);
+    // disabled as files.exclude passed down to search.exclude
+    // - https://stackoverflow.com/questions/29971600/how-can-i-choose-folders-to-be-ignored-during-search
+    //
+    // config.update('search.exclude', excludeObj, false);
     config.update('files.exclude', excludeObj, false);
 
     window.showInformationMessage(
